@@ -20,7 +20,7 @@
 }
 
 .soList {
-    background: url(../../imagess/line.png) no-repeat 300px center;
+    background: url(../../imagess/line.png) no-repeat 350px center;
 }
 
 .soList:after {
@@ -61,7 +61,7 @@
     min-height: 240px;
     background: #f4f5fe;
     box-shadow: 0px 0px 100px rgba(249, 70, 115, 0.08);
-    width: 285px;
+    width: 240px;
     font-size: 22px;
     display: flex;
     font-family: 'ProximaNova-Light';
@@ -76,12 +76,12 @@
 
 @media screen and (max-width: 1200px) {
     .soList {
-        background: url(../../imagess/line.png) no-repeat 150px center;
+        background: url(../../imagess/line.png) no-repeat 200px center;
     }
 
     .soItemText {
         padding: 60px 15px 10px 15px;
-        width: 205px;
+        width: 200px;
         font-size: 18px;
     }
 

@@ -26,7 +26,7 @@ function App() {
             <Footer/>
 
             <a href="javascript://" data-fancybox="" data-src="#lb-thank" className="thank-link">11</a>
-            <div style={{display: 'none'}}>
+            <div >
 
                 <div className="litebox-form lb-thank" id="lb-thank">
                     <div className="form-block">
