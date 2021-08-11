@@ -9,7 +9,7 @@ const MapBlock = () => {
 
 
     return (
-        <div className={style.mapBlock}>
+        <div className={style.mapBlock} id={'contacts'}>
 
             <div className={style.mapBlockGrid}>
 

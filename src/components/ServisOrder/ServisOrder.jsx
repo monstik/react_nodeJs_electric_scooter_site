@@ -3,7 +3,7 @@ import style from './ServisOrder.module.css';
 
 const ServisOrder = () => {
     return(
-    <div className={style.servisOrder}>
+    <div className={style.servisOrder} id={'section2'}>
         <div className="myContainer">
             <div className={style.sectionTitle}>Как получить быстрый ремонт электротранспорта</div>
             <div className={style.soList}>

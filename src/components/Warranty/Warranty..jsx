@@ -3,7 +3,7 @@ import style from './Warranty.module.css';
 
 const Warranty = () => {
     return(
-        <div className={style.garantBlock} id="m3">
+        <div className={style.garantBlock} id="warranty">
             <div className="myContainer">
                 <div className={style.garantContant}>
                     <div className={style.garantTitle}>Гаpантия дo <span>3 месяцев!</span> на всe peмoнтныe pабoты</div>

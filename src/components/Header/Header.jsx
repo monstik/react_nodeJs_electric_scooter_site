@@ -1,11 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import NavBar from "../NavBar/NavBar";
 import Contacts from "./Contacts/Contacts";
 import style from './Header.module.css'
 import Form from "./Form/Form";
 
 
+
 const Header = () => {
+
     return (
         <header className={style.header}>
             <NavBar/>
@@ -53,6 +55,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+
         </header>
     );
 }

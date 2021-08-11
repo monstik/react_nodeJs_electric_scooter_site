@@ -6,7 +6,7 @@ const Services = (props) => {
     return (
         <div className={style.servis}>
 
-            <div className="myContainer">
+            <div className="myContainer" id={'services'}>
                 <div className={style.sectionTitle}>Наши услуги</div>
                 <div className={style.servisTab}>
                     <ul className={style.tabs}>

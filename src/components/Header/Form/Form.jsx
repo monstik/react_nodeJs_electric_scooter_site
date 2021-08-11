@@ -2,7 +2,7 @@ import React from "react";
 import style from './Form.module.css'
 
 
-const Form = (props) => {
+const Form = ({title, text, formTextPlaceholderOne, formTextPlaceholderTwo}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -11,13 +11,13 @@ const Form = (props) => {
 
     return (
         <div className={style.form}>
-            <div className={style.formTitle}>{props.title}</div>
+            <div className={style.formTitle}>{title}</div>
             <div className={style.formText}>
-                {props.text}
+                {text}
             </div>
             <form onSubmit={handleSubmit}>
-                <input type="text" name="name" placeholder={props.formTextPlaceholderOne}/>
-                <input type="tel" name="phone" placeholder={props.formTextPlaceholderTwo} required=""/>
+                <input type="text" name="name" placeholder={formTextPlaceholderOne}/>
+                <input type="tel" name="phone" placeholder={formTextPlaceholderTwo} required=""/>
                 <input type="hidden" name="discount" value="Скидка 15%"/>
                 <button type="submit"
                         className={style.sendButton}>Пoлучить скидку

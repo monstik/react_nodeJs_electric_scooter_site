@@ -12,7 +12,7 @@ const PriceForm = () => {
     }
 
     return (
-        <div className={style.priseForm} id="m2">
+        <div className={style.priseForm} id="priceForm">
             <div className="myContainer">
                 <div className={style.pfLeft}>
                     <div className={style.pfLeftTitle}>Узнайтe стoимoсть peмoнта за 15 минут</div>

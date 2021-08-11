@@ -1,7 +1,6 @@
 import logo from './logo.svg';
 import './App.css';
 import '../src/styles/style.css'
-import NavBar from "./components/NavBar/NavBar";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import FeedBack from "./components/FeedBack/FeedBack";
@@ -12,10 +11,12 @@ import MapBlock from "./components/MapBlock/MapBlock";
 import Services from "./components/Services/Services";
 
 
+
 function App() {
+
     return (
         <>
-            <Header/>
+            <Header id="section1"/>
             <ServisOrder/>
             <Services/>
             <PriceForm/>
@@ -23,6 +24,7 @@ function App() {
             <FeedBack/>
             {/*пока нету интернета можно выключать гугл карту */}
             <MapBlock/>
+
             <Footer/>
 
             <a href="javascript://" data-fancybox="" data-src="#lb-thank" className="thank-link">11</a>
@@ -36,6 +38,7 @@ function App() {
                         </div>
                     </div>
                 </div>
+{/*
 
                 <div className="litebox-form lb-master" id="lb-master">
                     <div className="form-block">
@@ -55,27 +58,11 @@ function App() {
                         </form>
                     </div>
                 </div>
+*/}
 
-                <div className="litebox-form lb-remont" id="lb-remont">
-                    <div className="form-block">
-                        <div className="form-title">Заказать peмoнт</div>
-                        <div className="form-text">С Гаpантией дo 3 месяцев!</div>
-                        <form action="form-ok.php" method="post">
-                            <input type="text" placeholder="Как вас зoвут?" name="name"/>
-                            <input type="tel" placeholder="Номер телефона для связи" name="phone" required=""/>
-                            <button type="submit" onClick="return gtag_report_conversion"
-                                    className="send-button">Заказать ремонт
-                            </button>
-                            <div className="form-chek">
-                                <input type="checkbox" id="c1" checked=""/>
-                                <label htmlFor="c1"><span></span></label>
-                                Сoгласиe на oбpабoтку пepсoнальных данных
-                            </div>
-                        </form>
-                    </div>
-                </div>
 
-                <div className="litebox-form lb-consult" id="lb-consult">
+
+               {/* <div className="litebox-form lb-consult" id="lb-consult">
                     <div className="form-block">
                         <div className="form-title">заказать<br/>кoнсультацию</div>
                         <form action="form-ok.php" method="post">
@@ -92,7 +79,8 @@ function App() {
                         </form>
                     </div>
                 </div>
-            </div>
+            </div>*/}
+                </div>
         </>
     );
 }

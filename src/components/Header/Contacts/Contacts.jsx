@@ -1,7 +1,39 @@
-import React from "react";
+import React, {useState} from "react";
 import style from './Contact.module.css';
+import ReactModal from "../../conponents/ReactModal/ReactModal";
+import Form from "../Form/Form";
+import Button from "../../conponents/Button/Button";
+import RepairForm from "../../Forms/RepairForm/RepairForm";
+
+
+const customStyles = {
+    content: {
+        top: '50%',
+        left: '50%',
+        right: 'auto',
+        bottom: 'auto',
+        marginRight: '-50%',
+        transform: 'translate(-50%, -50%)',
+    },
+};
 
 const Contacts = (props) => {
+
+    const [modalIsOpen, setIsOpen] = useState(false);
+
+    function openModal() {
+        setIsOpen(true);
+    }
+
+    function afterOpenModal() {
+        // references are now sync'd and can be accessed.
+
+    }
+
+    function closeModal() {
+        setIsOpen(false);
+    }
+
     return (
         <div className={style.contactLine}>
             <div className="myContainer">
@@ -12,8 +44,10 @@ const Contacts = (props) => {
                     </div>
                     <div className={style.phone}>
                         <div className={style.phoneNumber}>
-                            <div>
-                                <a href={"tel:" + props.phoneNumber} className={style.phoneNuberLink}>{props.phoneNumber}</a>
+                            <div className={style.phone__number__link}>
+                                <a
+                                    href={"tel:" + props.phoneNumber}
+                                >{props.phoneNumber}</a>
                             </div>
                             <div className={style.description}>
                                 <div className={style.description}><strong>График pабoты: Пн-Пт: 09:00-18:00</strong>
@@ -22,12 +56,18 @@ const Contacts = (props) => {
                         </div>
                     </div>
                     <div className={style.formButton}>
+                        <Button setActive={openModal}>
+                            Заказать ремонт
+                        </Button>
 
-                        <a href="javascript://" data-fancybox="" data-src="#lb-remont" className="coll-back">Заказать
-                            ремонт</a>
                     </div>
                 </div>
             </div>
+            <ReactModal isOpen={modalIsOpen}
+                        onAfterOpen={afterOpenModal}
+                        onRequestClose={closeModal}>
+                <RepairForm/>
+            </ReactModal>
         </div>
     );
 
