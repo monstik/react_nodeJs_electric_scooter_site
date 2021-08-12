@@ -18,7 +18,6 @@ const NavBar = () => {
             <ul id="menu" className={state ? style.slideClosed : style.slideOpened}>
                 <li>
                     <Link
-                        activeClass="active"
                         to="services"
                         spy={true}
                         smooth={true}
@@ -29,7 +28,6 @@ const NavBar = () => {
                 </li>
                 <li>
                     <Link
-                        activeClass="active"
                         to="priceForm"
                         spy={true}
                         smooth={true}
@@ -40,7 +38,6 @@ const NavBar = () => {
                 </li>
                 <li>
                     <Link
-                        activeClass="active"
                         to="section1"
                         spy={true}
                         smooth={true}
@@ -51,7 +48,6 @@ const NavBar = () => {
                     /li>
                 <li>
                     <Link
-                        activeClass="active"
                         to="warranty"
                         spy={true}
                         smooth={true}
@@ -63,13 +59,11 @@ const NavBar = () => {
                 </li>
                 <li>
                     <Link
-                        activeClass="active"
                         to="contacts"
                         spy={true}
                         smooth={true}
                         offset={(window.innerWidth > 600) ? -40 : 650}
-                        duration={500}
-                    href={'d'}>
+                        duration={500}>
                         Кoнтакты
                     </Link>
                 </li>

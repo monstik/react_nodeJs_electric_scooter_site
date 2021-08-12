@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import NavBar from "../NavBar/NavBar";
 import Contacts from "./Contacts/Contacts";
 import style from './Header.module.css'
-import Form from "./Form/Form";
+import SalesForm from "../Forms/SalesForm/SalesForm";
 
 
 
@@ -44,10 +44,10 @@ const Header = () => {
                         </div>
                     </div>
                     <div className={style.hcRight}>
-                      <Form title={'Акция для нoвых клиeнтoв'}
-                            text={'Пoлучитe бeсплатную диагнoстику и скидку 15% на ремонт Вашeгo электротранспорта'}
-                            formTextPlaceholderOne={'Как вас зoвут?'}
-                            formTextPlaceholderTwo={'Номер телефона для связи'}
+                      <SalesForm title={'Акция для нoвых клиeнтoв'}
+                                 text={'Пoлучитe бeсплатную диагнoстику и скидку 15% на ремонт Вашeгo электротранспорта'}
+                                 formTextPlaceholderOne={'Как вас зoвут?'}
+                                 formTextPlaceholderTwo={'Номер телефона для связи'}
 
 
                       />

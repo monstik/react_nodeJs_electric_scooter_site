@@ -1,38 +1,22 @@
 import React, {useState} from "react";
 import style from './Contact.module.css';
 import ReactModal from "../../conponents/ReactModal/ReactModal";
-import Form from "../Form/Form";
+import SalesForm from "../../Forms/SalesForm/SalesForm";
 import Button from "../../conponents/Button/Button";
 import RepairForm from "../../Forms/RepairForm/RepairForm";
 
-
-const customStyles = {
-    content: {
-        top: '50%',
-        left: '50%',
-        right: 'auto',
-        bottom: 'auto',
-        marginRight: '-50%',
-        transform: 'translate(-50%, -50%)',
-    },
-};
 
 const Contacts = (props) => {
 
     const [modalIsOpen, setIsOpen] = useState(false);
 
-    function openModal() {
+    const openModal = () => {
         setIsOpen(true);
-    }
+    };
 
-    function afterOpenModal() {
-        // references are now sync'd and can be accessed.
-
-    }
-
-    function closeModal() {
+    const closeModal = () => {
         setIsOpen(false);
-    }
+    };
 
     return (
         <div className={style.contactLine}>
@@ -64,7 +48,6 @@ const Contacts = (props) => {
                 </div>
             </div>
             <ReactModal isOpen={modalIsOpen}
-                        onAfterOpen={afterOpenModal}
                         onRequestClose={closeModal}>
                 <RepairForm/>
             </ReactModal>

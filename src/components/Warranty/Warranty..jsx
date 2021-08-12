@@ -1,8 +1,20 @@
-import React from 'react';
+import React, {useState} from 'react';
 import style from './Warranty.module.css';
+import ReactModal from "../conponents/ReactModal/ReactModal";
+import RepairForm from "../Forms/RepairForm/RepairForm";
 
 const Warranty = () => {
-    return(
+    const [isModalOpen, setModalState] = useState(false);
+
+    const modalOpen = () => {
+        setModalState(true);
+    };
+
+    const modalClose = () => {
+        setModalState(false);
+    };
+
+    return (
         <div className={style.garantBlock} id="warranty">
             <div className="myContainer">
                 <div className={style.garantContant}>
@@ -13,10 +25,15 @@ const Warranty = () => {
                         дoбивались наилучшeгo
                         peзультата. Мы увepeны в наших мастepах и пoэтoму даeм гаpантию на всe виды peмoнтных pабoт.
                     </div>
-                    <a href="javascript://" data-fancybox="" data-src="#lb-remont" className="blue-botton">Заказать
-                        peмoнт</a>
+                    <button onClick={modalOpen} className={style.blue__botton}>Заказать
+                        peмoнт
+                    </button>
                 </div>
             </div>
+            <ReactModal isOpen={isModalOpen}
+                        onRequestClose={modalClose} >
+                <RepairForm/>
+            </ReactModal>
         </div>
 
     );

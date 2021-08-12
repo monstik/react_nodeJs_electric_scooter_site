@@ -1,8 +1,8 @@
 import React from "react";
-import style from './Form.module.css'
+import style from './SalesForm.module.css'
 
 
-const Form = ({title, text, formTextPlaceholderOne, formTextPlaceholderTwo}) => {
+const SalesForm = ({title, text, formTextPlaceholderOne, formTextPlaceholderTwo}) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -29,4 +29,4 @@ const Form = ({title, text, formTextPlaceholderOne, formTextPlaceholderTwo}) => 
 }
 
 
-export default Form;
+export default SalesForm;

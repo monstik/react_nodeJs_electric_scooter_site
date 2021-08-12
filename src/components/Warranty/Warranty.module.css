@@ -19,7 +19,7 @@
     min-height: 860px;
     position: relative;
     top: -20px;
-    z-index: 5;
+
     padding: 190px 0 0 0;
 }
 
@@ -46,7 +46,8 @@
 }
 
 
-.blueBotton {
+.blue__botton {
+    border: none;
     background: #5457c1;
     display: block;
     font-size: 24px;
@@ -62,14 +63,18 @@
     text-decoration: none !important;
     letter-spacing: 0.5px;
     box-shadow: 0px 8px 18px rgba(84, 87, 193, 0.3);
+    transition: 0.4s;
 }
 
-.blueBotton:hover {
+.blue__botton:hover {
     background-color: #f94673;
     color: #FFF;
+    transform: scale(1.1);
+    transition: 0.4s;
+    cursor: pointer;
 }
 
-.blueBotton:visited {
+.blue__botton:visited {
     color: #FFF;
 }
 

@@ -28,7 +28,7 @@
 }
 
 .topMenu ul li a {
-    text-decoration: none;
+    cursor: pointer;
     color: #2e2e2e;
     font-family: 'ProximaNova-Semibold';
     font-size: 18px;

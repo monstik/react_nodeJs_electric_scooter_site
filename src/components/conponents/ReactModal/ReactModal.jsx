@@ -1,24 +1,12 @@
 import React from 'react';
-import Modal from 'react-modal';
+import Modal, {setAppElement} from 'react-modal';
+// import {setAppElement} from 'react-modal';
 import style from './ReactModal.module.css';
 import './ReactModal.css';
 
-let test = {
 
-        base: {
-            position: 'fixed',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            backgroundColor: 'red',
-            opacity: 1,
+setAppElement('#root');
 
-        },
-
-
-
-}
 
 const ReactModal = ({isOpen, onAfterOpen, onRequestClose, children}) => {
     return (
