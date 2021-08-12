@@ -33,8 +33,9 @@
     color: #FFF;
 }
 
-.form__block input[type="text"] {
+.form__block input{
     margin-bottom: 17px;
+    box-sizing: border-box
 }
 
 .send__button {
@@ -59,15 +60,17 @@
 }
 
 
+
 @media screen and (max-width: 768px){
     .form__block{
+        width: auto;
         padding: 25px 10px 25px 10px;
     }
 }
 
 @media screen and (max-width: 520px) {
     .form__block{
-        width: 99%;
+
         margin: 0;
         padding: 22px 10px 20px 10px;
     }

@@ -9,7 +9,8 @@
 
 .form input{
     padding: 10px;
-    margin: 0 -10px 10px -10px;
+
+    box-sizing: border-box
 
 }
 
@@ -87,7 +88,7 @@
 
 @media screen and (max-width: 768px) {
     .form input{
-        margin: 0 -5px 10px -5px;
+
         padding: 5px;
     }
     .form {
